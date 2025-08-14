@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(231, 226, 226);
+        }
+        form{
+            background-color: rgb(252, 252, 252);
+            padding: 45px;
+            margin: 95px;
+            width: 60%;
+            border-radius: 9px;
+            height: 500px;
+            
+        }
+        label{
+            /* padding: 25px; */
+            margin: 0px;
+            padding: 0px;
+            font-weight: 600;
+            
+        }
+        .first{
+            padding: 0px;
+            margin: 25px;
+            
+        }
+        .Roll{
+          margin: 0px;
+          padding-left: 25px;       
+        }
+        button{
+            background-color: rgb(240, 65, 65);
+            font-size: 25px;
+            margin: 55px;
+            margin-top: 20px;
+            width: 80%;
+            border-radius: 6px;
+            color: white;
+        }
+        input{
+            margin-top: 3px;
+            
+            height: 25px;
+        }
+        h1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #name{
+            width: 70%;
+        }
+        #email{
+            width: 70%;
+        }
+        #Roll{
+            width: 70%;
+        }
+        #Dob{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>  
+    
+     <form>
+        <h1>Registration form</h1>
+    <div class="box">
+        <label for="name"> Name</label><br>
+        <input type="text" name="name" id="name" pattern="[A-za-z]{3,}" title="at least 3 letters" placeholder="Enter your name" required>
+    </div>
+    <br>
+    <div class="box">
+    <label for="email"> Email </label><br>
+    <input type="email" name="Email" id="email" title="valid format" placeholder="Enter your email">
+   </div>
+   <br>
+   <div class="box">
+    <label for="roll_number">Roll number</label><br>
+    <input type="text" name="roll_number" id="Roll" pattern="2025[0-9]{3}" title="e.g format: CS2025xxx" placeholder="Enter Roll number">
+    </div>
+    <br>
+    <div class="box">
+    <label>Gender</label><br>
+   <input type="radio" id="male" name="gender" value="male" required>
+  <label for="male">Male</label>
+
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label>
+  </div>
+  <br>
+  <div class="box">
+<label for="Dob">Date of Birth</label><br>
+<input type="date" name="DateOfBirth" id="Dob" required>
+</div>
+<div class="box">
+<button type="submit">submit</button>
+</div>
+</form>
+
+</body>
+</html>
