@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(229, 231, 231);
+        }
+        .box{
+            padding: 5px;
+            margin: 5px;
+
+        }
+        #name{
+            width: 50%;
+            height: 22px;
+            margin-top: 5px;
+        }
+        #Email{
+            width: 50%;
+            height: 22px;
+            margin-top: 5px;
+        }
+        form{
+            background-color: white;
+            padding: 25px;
+            margin: 75px;
+            width: 70%;
+            height: 450px;
+            border-radius: 8px;
+            font-weight: 550;
+        }
+        h1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: brown;
+        }
+        button{
+            padding: 4px;
+            margin: 6px;
+            border-radius: 5px;
+            background-color: rgb(20, 17, 2);
+            color: white;
+            width: 15%;
+        }
+        #comments{
+            padding: 15px;
+            margin: 5px;
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+    
+    <form>
+        <h1>Feedback Form </h1>
+        <div class="box">
+            <label for="name">Full Name</label> <br>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required >  
+        </div>
+        <div class="box">
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="Email" placeholder="Enter your email">
+        </div>
+        <div class="box">
+           <form>
+  <label>Rating</label><br>
+
+  <input type="radio" id="rate-1" name="rating" value="1">
+  <label for="rate-1">1</label>
+
+  <input type="radio" id="rate-2" name="rating" value="2">
+  <label for="rate-2">2</label>
+
+  <input type="radio" id="rate-3" name="rating" value="3">
+  <label for="rate-3">3</label>
+
+  <input type="radio" id="rate-4" name="rating" value="4">
+  <label for="rate-4">4</label>
+
+  <input type="radio" id="rate-5" name="rating" value="5">
+  <label for="rate-5">5</label>
+
+        </div>
+        <div class="box">
+            <label for="comments">comments :</label><br>
+            <input type="text" name="comments" id="comments" placeholder="Enter your comments" required>
+        </div>
+        <div class="box">
+            <button type="Submit"> Submit</button>
+            <button type="Reset"> Reset</button>
+        </div>
+    </form>
+</body>
+</html>
