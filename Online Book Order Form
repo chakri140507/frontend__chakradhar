@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(217, 218, 220);
+        }
+        .box{
+            padding: 6px;
+        }
+        form{
+            margin: 125px;
+            background-color: rgb(255, 255, 254);
+            border-radius: 7px;
+            padding: 25px;
+            width: 60%;
+            height: 500px;
+        }
+        #Name{
+            padding: 2px;
+            margin: 5px;
+            width: 60%;
+        }
+        #number{
+            padding: 2px;
+            margin: 5px;
+            width: 60%;
+        }
+        #copies{
+            padding: 2px;
+            margin: 5px;
+            width: 60%;
+        }
+        #Name{
+            padding: 2px;
+            margin: 5px;
+        }
+        #numbe{
+            padding: 2px;
+            margin: 5px;
+        }
+        #book-category{
+            padding: 2px;
+            margin: 5px;
+        }
+        button{
+            width: 70%;
+            margin-left: 75px;
+            height: 30px;
+            font-size: 20px;
+            background-color: rgb(200, 70, 70);
+            color: white;
+            border-radius: 5px;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+    
+    <form>
+        <h1>Online Book Order Form </h1>
+        <div class="box">
+            <label for="Name">Customer Name:</label><br>
+            <input type="text" name="Name" id="Name" placeholder="Enter your name" required>
+        </div>
+        <div class="box">
+            <label for="Number">Mobile number</label><br>
+            <input type="nubers" name="Number" id="number" pattern="[0-9]{10,}" placeholder="Enter your Mobile number" required>
+        </div>
+        <div class="box">
+        <label for="book-category">Book Category:</label><br>
+        <select name="book-category" id="book-category" required>
+            <option value="">-- Select a Category --</option>
+            <option value="fiction">Fiction</option>
+            <option value="non-fiction">Non-Fiction</option>
+            <option value="science">Science</option>
+            <option value="history">History</option>
+            <option value="biography">Biography</option>
+            <option value="technology">Technology</option>
+        </select>
+    </div>
+    <div class="box">
+        <label for="number">Number Of Copies:</label><br>
+        <input type="number" name="number" id="number" required>
+    </div>
+    <div class="box">
+        <!-- Address -->
+        <label for="address">Address:</label><br>
+        <textarea name="address" id="address" rows="4" cols="40" placeholder="Enter your full address"
+            required></textarea>
+    </div>
+    <div class="box">
+        <button type="submit">Submit</button>
+    </div>
+
+    </form>
+</body>
+</html>
